@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat dengan AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Chat dengan AI</h2>
+
+    <!-- Dropdown untuk memilih model -->
+    <label for="model-select">Pilih Model:</label>
+    <select id="model-select">
+        <option value="deepseek-r1:1.5b" selected>DeepSeek R1 (1.5B)</option>
+        <option value="deepseek-r1" disabled>DeepSeek R1 (7B)</option>
+        <option value="deepseek-r1:671b" disabled>DeepSeek R1 (671B)</option>
+        <option value="gpt-4o" disabled>Chat GPT-4o</option>
+        <option value="llama3.3" disabled>LLaMA 3 (70b)</option>
+    </select>
+
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Ketik pesan..." />
+    <button onclick="sendMessage()">Kirim</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
